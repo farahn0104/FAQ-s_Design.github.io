@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --hover-color: hsl(279, 89%, 56%);
+  --bottom-bgc: hsl(275, 100%, 97%);
+  --center-para: #8d838f;
+}
+body {
+  background: url(images/bg-half-system.svg);
+  background-color: var(--bottom-bgc);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  position: fixed;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.container-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  top: 70px;
+  padding: 10px 25px;
+  height: 360px;
+  width: 380px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.heading {
+  display: flex;
+}
+.heading img {
+  width: 25px;
+}
+h1 {
+  font-weight: 800;
+  margin-left: 15px;
+}
+.center {
+  display: flex;
+  justify-content: space-between;
+}
+.center p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.center img {
+  width: 20px;
+}
+.center-para {
+  margin-bottom: 10px;
+  color: #8d838f;
+  font-size: 12px;
+}
+.bottom {
+  margin-top: 10px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom img {
+  display: inline;
+  width: 20px;
+}
+.bottom p {
+  transition: ease-in-out 0.4s;
+}
+.bottom p:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+.plus-minus {
+  transition: ease-in-out 0.5s;
+}
+.plus-minus:hover {
+  width: 25px;
+  cursor: pointer;
+}
+@media (width <=1200px) {
+
+  .container {
+    position: relative;
+    top: 60px;
+    width: 300px;
+    padding: 10px 25px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  body{
+    background-color: var(--bottom-bgc);
+  }
+  .container-container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .container{
+    position: fixed;
+  }
+
+}
+
+@media (width <=375px) {
+  .container-container {
+    background: url(images/bg-half-mobile.svg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heading img {
+    width: 22px;
+  }
+  .container {
+    position: relative;
+    top: 60px;
+    width: 240px;
+    padding: 10px 25px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  .center img {
+    position: relative;
+    left: 20px;
+    width: 25px;
+  }
+
+  .bottom img {
+    width: 25px;
+    position: relative;
+    left: 20px;
+    top: 3px;
+  }
+}
